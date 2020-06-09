@@ -15,7 +15,7 @@ use Psr\Log\LogLevel;
 
 $baseUri = ROOT_PATH;
 
-$configDir = $baseUri . '/Config';
+$configDir = $baseUri . '/config';
 
 
 $app = AppFactory::create();
