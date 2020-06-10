@@ -1,14 +1,11 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
+date_default_timezone_set('Asia/Shanghai');
+
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\StdoutLoggerInterface;
-use Hyperf\Crontab\Crontab;
-use Hyperf\Crontab\Process\CrontabDispatcherProcess;
-use Hyperf\DB\DB;
 use Hyperf\Nano\Factory\AppFactory;
-use Psr\Log\LogLevel;
-
 
 !defined('ROOT_PATH') && define('ROOT_PATH', __DIR__);
 !defined('ENV') && define('ENV', 'dev');
@@ -16,7 +13,6 @@ use Psr\Log\LogLevel;
 $baseUri = ROOT_PATH;
 
 $configDir = $baseUri . '/config';
-
 
 $app = AppFactory::create();
 

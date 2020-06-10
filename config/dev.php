@@ -43,19 +43,20 @@ return [
     ],
 
     'crontab' => [
-        '* * * * * *' => [
+        //vendor/hyperf/crontab/src/Parser.php  详解
+        '10-20/1 11-12 18 * * *' => [
             [new App\Crontab\Test, 'aaa'],
         ],
         '*/2 * * * * *' => [
-            [new App\Crontab\Test, 'bbb'],
+//            [new App\Crontab\Test, 'bbb'],
         ],
         '*/5 * * * * *' => [
-            [new App\Crontab\Test, 'ccc'],
+//            [new App\Crontab\Test, 'ccc'],
         ]
     ],
 
     'command' => [
-        'echo' => [new \App\Command\Test(), 'echo']
+        'echo' => [new App\Command\Test(), 'echo']
     ]
 
 ];
