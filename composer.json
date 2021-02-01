@@ -1,17 +1,19 @@
 {
-  "name": "xiaoguo/nano",
+  "name": "xiaoguo0426/hyper-nano",
   "type": "project",
   "license": "MIT",
   "require": {
     "hyperf/nano": "^1.0",
-    "hyperf/process": "^1.1",
-    "hyperf/crontab": "^1.1",
-    "hyperf/db": "^1.1",
-    "hyperf/testing": "^1.1"
-  }
-  ,
+    "hyperf/dag-incubator": "^0.1.1",
+    "hyperf/process": "^2.1",
+    "hyperf/crontab": "^2.1",
+    "hyperf/db": "^2.1"
+  },
   "require-dev": {
-    "roave/security-advisories": "dev-master"
+    "hyperf/testing": "^2.1",
+    "swoole/ide-helper": "^4.6",
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "hyperf/devtool": "^2.1"
   },
   "autoload": {
     "psr-4": {

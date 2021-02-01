@@ -18,7 +18,7 @@ return [
 
     'db.default' => [
         'driver' => 'mysql',
-        'host' => 'localhost',
+        'host' => 'mysql',
         'database' => 'hyperf',
         'username' => 'homestead',
         'password' => 'secret',
